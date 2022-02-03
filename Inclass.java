@@ -24,11 +24,17 @@ public class inclass {
 				
 			}
 			else {total+=0;}
-			
+			int maxTemp =0;
+			for(int i=0; i<range.length; i++) {
+			if(range[i]>maxTemp) {
+			maxTemp=range[i];
+				}
+			}
 				
 			}
 		double average = total/14;
-		System.out.printf("The average temperature is %.2f degrees ",average);
+		System.out.printf("The average temperature is %.2f degrees \n",average);
+		System.out.print("The maximum temperature is  "+ maxTemp);
 		
 		}
 }
